@@ -1,52 +1,43 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Jose Alfredo Cervantez</title>
-    <script src=<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-  </head>
-  <body>
-    <header>
-      <div class="inner-width">
-        <h1>Menu</h1>
-        <div class="menu-icon">
-          <i class="fas fa-align-right"></i>
-        </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="inner-width">
+      <h1>Menu</h1>
+      <div class="menu-icon">
+        <i class="fas fa-align-right"></i>
       </div>
-    </header>
-
-    <div class="naviation-menu">
-      <nav>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Curriculum Vitae</a></li>
-        <li><a href="#">Programming Resources</a></li>
-        <li><a href="#">Personal</a></li>
-      </nav>
     </div>
-  </body>
+  </header>
 
-<div class="box">
-  <img src="profile.jpg" alt="" class="box-img">
-  <h1>
-Jose Cervantez</h1>
-<h5>
-Behavioral Science Researcher</h5>
-<p>
-Self description</p>
-<ul>
-<li><a href="mailto:jose.cervantez@anderson.ucla.edu"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-<li><a href="https://twitter.com/jacervantez"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-</ul>
-</div>
-<script>
-  $(".menu-icon").click(function(){
-    $(this).toggleClass("active");
-    $(".navigation-menu").toggleClass("active");
-    $(".menu-icon i").toggleClass("fa-times");
-  });
-</script>
+  <div class="navigation-menu">
+    <nav>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Works</a></li>
+      <li><a href="#">Contact</a></li>
+    </nav>
+  </div>
+
+  <p>
+    Jose Cervantez Description and Research Summary
+  </p>
+
+  <script>
+    $(".menu-icon").click(function(){
+      $(this).toggleClass("active");
+      $(".navigation-menu").toggleClass("active");
+      $(".menu-icon i").toggleClass("fa-times");
+    });
+  </script>
 </body>
 </html>

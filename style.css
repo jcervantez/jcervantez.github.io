@@ -126,3 +126,6 @@ p{
 .navigation-menu.active li:nth-child(4) a{
   transition-delay: .8s;
 }
+.navigation-menu.active li:nth-child(5) a{
+  transition-delay: 1s;
+}

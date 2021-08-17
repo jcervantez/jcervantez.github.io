@@ -21,13 +21,13 @@
     <div class="naviation-menu">
       <nav>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
+        <li><a href="#">Curriculum Vitae</a></li>
+        <li><a href="#">Programming Resources</a></li>
+        <li><a href="#">Personal</a></li>
       </nav>
     </div>
   </body>
-  
+
 <div class="box">
   <img src="profile.jpg" alt="" class="box-img">
   <h1>
@@ -41,5 +41,13 @@ Self description</p>
 <li><a href="https://twitter.com/jacervantez"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
 </ul>
 </div>
+<script>
+  $(".menu-icon").click(function(){
+    $(this).toggleClass("active");
+    $(".navigation-menu").toggleClass("active");
+    $(".menu-icon i").toggleClass("fa-times");
+  });
+</script>
+
 </body>
 </html>

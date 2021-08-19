@@ -136,7 +136,7 @@ p{
   transition-delay: .5s;
 }
 
-@media all and (orientation:landscape)
+@media only screen and (max-width: 850px)
 {
   .navigation-menu{
     position: fixed;

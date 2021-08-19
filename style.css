@@ -44,11 +44,11 @@ header{
 
 .navigation-menu{
   position: fixed;
-  width: 100%;
+  width:25%;
   height: 100vh;
   background: #2c3a47;
   top: 0;
-  right: -100%;
+  right: -25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,7 +66,7 @@ header{
 
 .navigation-menu a{
   color: #fff;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 700;
   position: relative;
   display: inline-block;
@@ -117,21 +117,21 @@ p{
 }
 
 .navigation-menu.active li:nth-child(1) a{
-  transition-delay: .2s;
+  transition-delay: .1s;
 }
 
 .navigation-menu.active li:nth-child(2) a{
-  transition-delay: .4s;
+  transition-delay: .2s;
 }
 
 .navigation-menu.active li:nth-child(3) a{
-  transition-delay: .6s;
+  transition-delay: .3s;
 }
 
 .navigation-menu.active li:nth-child(4) a{
-  transition-delay: .8s;
+  transition-delay: .4s;
 }
 
 .navigation-menu.active li:nth-child(5) a{
-  transition-delay: 1s;
+  transition-delay: .5s;
 }

@@ -95,6 +95,9 @@ p{
   line-height: 1.4em;
   text-align: justify;
 }
+html, body {
+    overflow: auto;
+}
 
 
 .menu-icon.active{

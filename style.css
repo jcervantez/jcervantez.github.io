@@ -14,12 +14,6 @@
 header{
   background: #f1f1f1;
 }
-html {
-  height: 100%;
-}
-body {
-  min-height: 100%;
-}
 
 .inner-width{
   max-width: 80%;
@@ -103,10 +97,17 @@ p{
   height: 100vh;
   max-width: 80%;
   margin: auto;
-  padding: 40px 100px;
+  padding: 40px 0;
   font-size: 18px;
   line-height: 1.4em;
   text-align: justify;
+}
+
+html, body{
+  overflow: auto;
+  overflow-y:scroll;
+  height: 100vh;
+  padding: 40px 100%;
 }
 
 .menu-icon.active{

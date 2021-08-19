@@ -10,8 +10,15 @@
   box-sizing: border-box;
 }
 
+
 header{
   background: #f1f1f1;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
 }
 
 .inner-width{
@@ -100,11 +107,6 @@ p{
   font-size: 18px;
   line-height: 1.4em;
   text-align: justify;
-}
-html, body {
-    overflow: auto;
-    overflow-y:scroll;
-    height: 100vh;
 }
 
 .menu-icon.active{

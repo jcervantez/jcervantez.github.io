@@ -92,6 +92,7 @@ header{
 
 p{
   max-width: 80%;
+  min-height:100%;
   margin: auto;
   padding: 40px 0;
   font-size: 18px;

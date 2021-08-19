@@ -107,7 +107,7 @@ html, body{
   overflow: auto;
   overflow-y:scroll;
   height: 100vh;
-  padding: 40px 100%;
+  padding: 40px 100px;
 }
 
 .menu-icon.active{

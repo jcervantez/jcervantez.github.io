@@ -1,7 +1,4 @@
 *{
-  overflow: auto;
-  overflow-y:scroll;
-  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "Ubuntu" ,sans-serif;
@@ -9,7 +6,6 @@
   list-style: none;
   box-sizing: border-box;
 }
-
 
 header{
   background: #f1f1f1;
@@ -92,9 +88,6 @@ header{
 }
 
 p{
-  overflow: auto;
-  overflow-y:scroll;
-  height: 100vh;
   max-width: 80%;
   margin: auto;
   padding: 40px 0;
@@ -103,12 +96,6 @@ p{
   text-align: justify;
 }
 
-html, body{
-  overflow: auto;
-  overflow-y:scroll;
-  height: 100vh;
-  padding: 40px 100px;
-}
 
 .menu-icon.active{
   background: #f1f1f1;
@@ -139,6 +126,7 @@ html, body{
 .navigation-menu.active li:nth-child(4) a{
   transition-delay: .8s;
 }
+
 .navigation-menu.active li:nth-child(5) a{
   transition-delay: 1s;
 }

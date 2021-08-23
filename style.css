@@ -31,12 +31,12 @@ header{
 }
 
 .col-1 h2{
-  font-size: 25px;
+  font-size: clamp(14px, 25px, 25px);
   font-family: norwester;
   color: black;
 }
 .col-1 h3{
-  font-size: 14px;
+  font-size: clamp(8px, 14px, 14px);
   font-family: aleo;
   color: black;
 }

@@ -38,7 +38,7 @@ header{
 .col-1 h3{
   font-size: 21px;
   font-family: aleo;
-  color: black;
+  color: #595959;
 }
 
 .container{
@@ -211,14 +211,14 @@ p{
         text-align: center;
       }
       .col-1 h2{
-        font-size: 18px;
+        font-size: 22px;
         font-family: norwester;
         color: black;
       }
       .col-1 h3{
-        font-size: 12px;
+        font-size: 14px;
         font-family: aleo;
-        color: black;
+        color: #595959;
       }
       body {
           padding-bottom: 20px;

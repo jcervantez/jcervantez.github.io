@@ -233,18 +233,7 @@ p{
       		justify-content: center;
           border-radius: 15px;
       	}
-        .container{
-        		width: 40%;
-        		padding: 7px;
-        		margin: 80px auto;
-        		background: #2f3d4a;
-        		display: flex;
-        		flex-direction: row;
-        		justify-content: center;
-            border-radius: 15px;
-        	}
-
-        	.box{
+      .box{
         		width: 100%;
         		height: 100px;
             padding: 10px;
@@ -254,11 +243,11 @@ p{
             border-radius: 15px;
 
         	}
-        	.box:hover{
+      .box:hover{
         		background: #dedede;
 
         	}
-          .xyz{
+      .xyz{
             display: block;
           }
 }

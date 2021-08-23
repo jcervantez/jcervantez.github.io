@@ -31,18 +31,18 @@ header{
 }
 
 .col-1 h2{
-  font-size: clamp(14px, 25px, 25px);
+  font-size: 35px;
   font-family: norwester;
   color: black;
 }
 .col-1 h3{
-  font-size: clamp(8px, 14px, 14px);
+  font-size: 21px;
   font-family: aleo;
   color: black;
 }
 
 .container{
-		width: 40%;
+		width: 70%;
 		padding: 7px;
 		margin: 80px auto;
 		background: #2f3d4a;

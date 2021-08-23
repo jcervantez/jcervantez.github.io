@@ -40,6 +40,21 @@ header{
   font-family: aleo;
   color: black;
 }
+@media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3) {
+      .col-1 h2{
+        font-size: 14px;
+        font-family: norwester;
+        color: black;
+      }
+      .col-1 h3{
+        font-size: 8px;
+        font-family: aleo;
+        color: black;
+      }
+}
 .container{
 		width: 40%;
 		padding: 7px;

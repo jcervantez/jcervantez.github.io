@@ -107,7 +107,7 @@ header{
 
 .navigation-menu{
   position: fixed;
-  width: 40%;
+  width: 30%;
   height: 100vh;
   background: #2c3a47;
   top: 0;
@@ -292,7 +292,6 @@ p{
             background: #2c3a47;
             top: 0;
             right: -100%;
-            opacity: 0.91;
             display: flex;
             align-items: center;
             justify-content: center;

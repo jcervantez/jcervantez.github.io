@@ -22,7 +22,13 @@ p{
   margin: auto;
   font-size: 18px;
   line-height: 1.4em;
+  padding-bottom: 20px;
 }
+ol li {
+  list-style-type: decimal;
+  display: list-item;
+  margin-left: 60px;
+  }
 
 .inner-width{
   max-width: 80%;

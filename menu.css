@@ -13,6 +13,9 @@ html {
 header{
   background: #f1f1f1;
 }
+body {
+    padding-bottom: 20px;
+}
 p{
   max-width: 80%;
   min-height:100%;

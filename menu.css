@@ -13,6 +13,13 @@ html {
 header{
   background: #f1f1f1;
 }
+p{
+  max-width: 80%;
+  min-height:100%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.4em;
+}
 
 .inner-width{
   max-width: 80%;
@@ -321,17 +328,6 @@ header{
 
           .navigation-menu a:hover::before{
             width: 100%;
-          }
-
-          p{
-            height: 80vh;
-            max-width: 80%;
-            min-height:100%;
-            margin: auto;
-            padding: 40px 0;
-            font-size: 18px;
-            line-height: 1.4em;
-            text-align: center;
           }
 
 

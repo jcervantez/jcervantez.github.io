@@ -227,7 +227,7 @@ x %&gt;% log() %&gt;%
 <pre><code>## [1]  3.3  1.8  1.6  0.5  0.3  0.1 48.8  1.1</code></pre>
 <p>In short, here are four reasons why you should be using pipes in R:</p>
 <ol>
-  <li><p>You’ll structure the sequence of your data operations from left to right, as apposed to from inside and out;</li>
+  <li><p>You’ll structure the sequence of your data operations from left to right, as apposed to from inside and out;</p></li>
   <li><p>You’ll avoid nested function calls;</p></li>
   <li><p>You’ll minimize the need for local variables and function definitions;</p></li>
   <li><p>You’ll make it easy to add steps anywhere in the sequence of operations.</p></li>
@@ -237,7 +237,14 @@ x %&gt;% log() %&gt;%
 <h2>dplyr package</h2>
 <p>By far my most used package in R is <code>dplyr</code>. See documentation <a href="https://www.rdocumentation.org/packages/dplyr/versions/0.7.8">here.</a></p>
 <p>dplyr is part of the tidyverse collection of R packages for data science. At it’s core, there are 5 functions which I use (typically chained with the pipe in operator <code>%&gt;%</code>) for every single analysis:</p>
-<p><code>mutate()</code> adds new variables that are functions of existing variables <code>select()</code> picks variables based on their names. <code>filter()</code> picks cases based on their values. <code>summarise()</code> reduces multiple values down to a single summary. <code>arrange()</code> changes the ordering of the rows. <code>group_by</code> allows for group operations in the “split-apply-combine” concept</p>
+<ul>
+  <li><p><code>mutate()</code> adds new variables that are functions of existing variables</p></li>
+  <li><p><code>select()</code> picks variables based on their names.</p></li>
+  <li><p><code>filter()</code> picks cases based on their values.</p></li>
+  <li><p><code>summarise()</code> reduces multiple values down to a single summary.</p></li>
+  <li><p><code>arrange()</code> changes the ordering of the rows.</p></li>
+  <li><p><code>group_by</code> allows for group operations in the “split-apply-combine” concept.</p></li>
+
 <p>I’ll demonstrate below using strictly dplyr functions with the datasets <code>PlantGrowth</code> which are the results of an experiment on Plant Growth with 3 conditions and <code>mtcars</code> which are fuel consumption and 10 aspects of automobile design and performance for 32 automobiles.</p>
 <pre class="r"><code>library(dplyr)
 

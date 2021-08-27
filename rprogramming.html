@@ -188,6 +188,7 @@ pre code {
 <li><a href="#preamble">Preamble</a></li>
 <li><a href="#pipe-operator">Pipe <code>%&gt;%</code> Operator</a></li>
 <li><a href="#dplyr-package">dplyr package</a></li>
+<li><a href="#tidy data">tidy data</a></li>
 </ul>
 </div>
 <hr>
@@ -235,6 +236,60 @@ x %&gt;% log() %&gt;%
 <div id="dplyr-package" class="section level2">
 <h2>dplyr package</h2>
 <p>By far my most used package in R is <code>dplyr</code>. See documentation <a href="https://www.rdocumentation.org/packages/dplyr/versions/0.7.8">here.</a></p>
+<p>dplyr is part of the tidyverse collection of R packages for data science. At it’s core, there are 5 functions which I use (typically chained with the pipe in operator <code>%&gt;%</code>) for every single analysis:</p>
+<p><code>mutate()</code> adds new variables that are functions of existing variables <code>select()</code> picks variables based on their names. <code>filter()</code> picks cases based on their values. <code>summarise()</code> reduces multiple values down to a single summary. <code>arrange()</code> changes the ordering of the rows. <code>group_by</code> allows for group operations in the “split-apply-combine” concept</p>
+<p>I’ll demonstrate below using strictly dplyr functions with the datasets <code>PlantGrowth</code> which are the results of an experiment on Plant Growth with 3 conditions and <code>mtcars</code> which are fuel consumption and 10 aspects of automobile design and performance for 32 automobiles.</p>
+<pre class="r"><code>library(dplyr)
+
+summary(PlantGrowth)</code></pre>
+<pre><code>##      weight       group
+##  Min.   :3.590   ctrl:10
+##  1st Qu.:4.550   trt1:10
+##  Median :5.155   trt2:10
+##  Mean   :5.073
+##  3rd Qu.:5.530
+##  Max.   :6.310</code></pre>
+<pre class="r"><code># calculate the average weight of the plants by condition
+
+PlantGrowth %&gt;%
+  group_by(group) %&gt;%
+  summarise(mean_growth = mean(weight))</code></pre>
+<pre><code>## # A tibble: 3 x 2
+##   group mean_growth
+##   &lt;fct&gt;       &lt;dbl&gt;
+## 1 ctrl         5.03
+## 2 trt1         4.66
+## 3 trt2         5.53</code></pre>
+<pre class="r"><code>head(mtcars)</code></pre>
+<pre><code>##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre>
+<pre class="r"><code># create a new column of weight from lbs to kg (1 lb = 0.453kg)
+# filter 6 cylinder cars only
+# isolate model name, mpg, and wt in kg
+# arange the data from lightest to heaviest
+
+mtcars %&gt;%
+  mutate(wt_kg = (wt*1000)*0.453) %&gt;%
+  filter(cyl == 6) %&gt;%
+  select(mpg, wt_kg) %&gt;%
+  arrange(wt_kg)</code></pre>
+<pre><code>##                 mpg    wt_kg
+## Mazda RX4      21.0 1186.860
+## Ferrari Dino   19.7 1254.810
+## Mazda RX4 Wag  21.0 1302.375
+## Hornet 4 Drive 21.4 1456.395
+## Merc 280       19.2 1558.320
+## Merc 280C      17.8 1558.320
+## Valiant        18.1 1567.380</code></pre>
+<p>As you can see, with only a few lines of code, we can chain various cleaning commands together and produce a desirable output. I highly recommend the dplyr package for all data cleaning purposes. Here’s a very nice <a href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">cheat sheet</a> that you should bookmark.</p>
+</div>
+<div id="tidy-data" class="section level2">
+<h2>tidy data</h2>
 </div>
 
 

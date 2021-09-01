@@ -156,11 +156,15 @@ p{
   max-width: 80%;
   min-height:100%;
   margin: auto;
-  padding: 40px 0;
   font-size: 18px;
   line-height: 1.4em;
-  text-align: center;
+  padding-bottom: 20px;
 }
+ol li {
+  list-style-type: decimal;
+  display: list-item;
+  margin-left: 60px;
+  }
 
 
 .menu-icon.active{

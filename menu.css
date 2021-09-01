@@ -13,9 +13,7 @@ html {
 header{
   background: #f1f1f1;
 }
-body {
-    padding-bottom: 20px;
-}
+
 p{
   max-width: 80%;
   min-height:100%;
@@ -226,7 +224,7 @@ ol li {
         color: #595959;
       }
       body {
-          padding-bottom: 20px;
+          padding-bottom: 0px;
       }
       .container{
       		width: 90%;

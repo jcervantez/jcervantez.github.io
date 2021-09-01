@@ -13,9 +13,6 @@ html {
 header{
   background: #f1f1f1;
 }
-body {
-    padding-bottom: 20px;
-}
 .inner-width{
   max-width: 80%;
   display: flex;

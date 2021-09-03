@@ -4,4 +4,4 @@ date: '09-03-2021'
 ---
 
 
-<a id="raw-url" href="C:\Users\jcerv\OneDrive - UCLA IT Services\Documents\GitHub\jcervantez.github.io\content\CV.pdf">Download FILE</a>
+<a id="raw-url" href="https://jcervantez.github.io/Jose%20Cervantez%20CV.pdf">Download Here</a>

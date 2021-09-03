@@ -1,0 +1,5 @@
+author: jcervantez
+date: '`r format(Sys.Date())`'
+title: _site.yml
+output: html_document
+

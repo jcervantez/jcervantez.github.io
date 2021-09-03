@@ -1,14 +1,7 @@
 ---
-title: 'Jose Cervantez CV'
+title: 'Curriculum Vitae'
 date: '09-03-2021'
 ---
-\usepackage{pdfpages}
-
-```{r label, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Jose Cervantez CV', out.width='0.75\\linewidth', fig.pos='H'}
 
 
-knitr::include_graphics(path = "./CV.pdf")
-
-
-
-```
+![Curriculum Vitae](C:/Users/jcerv/OneDrive - UCLA IT Services/Documents/GitHub/jcervantez.github.io/content/CV.pdf)

@@ -19,7 +19,7 @@ menu:
     - name: Resources
       url: /Resources/
     - name: CV
-      url: https://twitter.com/rstudio
+      url: /CV/
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5

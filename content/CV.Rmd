@@ -1,0 +1,14 @@
+---
+title: 'Jose Cervantez CV'
+date: '09-03-2021'
+---
+\usepackage{pdfpages}
+
+```{r label, echo = FALSE, message=FALSE, fig.align='center', fig.cap='Jose Cervantez CV', out.width='0.75\\linewidth', fig.pos='H'}
+
+
+knitr::include_graphics(path = "./CV.pdf")
+
+
+
+```

@@ -1,5 +1,0 @@
-author: jcervantez
-date: '`r format(Sys.Date())`'
-title: Untitled
-output: html_document
-

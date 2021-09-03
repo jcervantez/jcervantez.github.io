@@ -4,4 +4,4 @@ date: '09-03-2021'
 ---
 
 
-![Curriculum Vitae](C:/Users/jcerv/OneDrive - UCLA IT Services/Documents/GitHub/jcervantez.github.io/content/CV.pdf)
+<a id="raw-url" href="C:\Users\jcerv\OneDrive - UCLA IT Services\Documents\GitHub\jcervantez.github.io\content\CV.pdf">Download FILE</a>

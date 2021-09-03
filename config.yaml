@@ -14,9 +14,9 @@ permalinks:
   post: /:year/:month/:day/:slug/
 menu:
   main:
-    - name: About
+    - name: Academic Interests
       url: /about/
-    - name: Resources
+    - name: Programming Tips
       url: /Resources/
     - name: CV
       url: /CV/

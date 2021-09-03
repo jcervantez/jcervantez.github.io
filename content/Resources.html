@@ -1,6 +1,7 @@
 ---
 title: 'Resources'
 date: ''
+output: html_document
 ---
 
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
@@ -14,16 +15,16 @@ date: ''
 <h2>Pipe <code>%&gt;%</code> Operator</h2>
 <p>The pipe operator, written as <code>%&gt;%</code> takes the output of one function and passes it into another function as an argument. This allows us to link a sequence of analysis steps.</p>
 <p>For a mathematical analogy, <code>f(x)</code> can be rewritten as <code>x %&gt;% f</code></p>
-<pre class="r"><code>## compute the logarithm of `x`
+<pre class="r bg-danger"><code>## compute the logarithm of `x`
 
 x &lt;- 1
 
 log(x)</code></pre>
-<pre><code>## [1] 0</code></pre>
-<pre class="r"><code>## compute the logaritm of `x`
+<pre class="bg-warning"><code>## [1] 0</code></pre>
+<pre class="r bg-danger"><code>## compute the logaritm of `x`
 
 x %&gt;% log()</code></pre>
-<pre><code>## [1] 0</code></pre>
+<pre class="bg-warning"><code>## [1] 0</code></pre>
 <p>Why is this useful though? R is a functional language, which means that your code often contains a lot of parenthesis, <code>(</code> and <code>)</code>. When you have complex code, this often will mean that you will have to nest those parentheses together. This makes your R code hard to read and understand.</p>
 <pre class="r"><code># Initialize `x`
 x &lt;- c(0.109, 0.359, 0.63, 0.996, 0.515, 0.142, 0.017, 0.829, 0.907)

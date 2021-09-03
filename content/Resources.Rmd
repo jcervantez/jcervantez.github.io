@@ -1,6 +1,7 @@
 ---
 title: 'Resources'
 date: ''
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -19,7 +20,7 @@ The pipe operator, written as `%>%` takes the output of one function and passes 
 
 For a mathematical analogy, `f(x)` can be rewritten as `x %>% f`
 
-```{r echo=TRUE}
+```{r class.source="bg-danger", class.output="bg-warning", echo=TRUE}
 ## compute the logarithm of `x`
 
 x <- 1

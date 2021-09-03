@@ -1,0 +1,161 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+
+## Preamble
+
+Over the past couple of years, I've had the privilege to advance my R skills, as well as acquire useful functions that should aid anyone using R for behavioral science. This list is not exhaustive, but a list of my most used functions, packages, and useful tips!
+
+## Pipe `%>%` Operator
+
+The pipe operator, written as `%>%` takes the output of one function and passes it into another function as an argument. This allows us to link a sequence of analysis steps. 
+
+For a mathematical analogy, `f(x)` can be rewritten as `x %>% f`
+
+```{r echo=TRUE}
+## compute the logarithm of `x`
+
+x <- 1
+
+log(x)
+
+## compute the logaritm of `x`
+
+x %>% log()
+
+
+```
+
+Why is this useful though? R is a functional language, which means that your code often contains a lot of parenthesis, `(` and `)`. When you have complex code, this often will mean that you will have to nest those parentheses together. This makes your R code hard to read and understand.
+
+```{r echo=TRUE}
+# Initialize `x`
+x <- c(0.109, 0.359, 0.63, 0.996, 0.515, 0.142, 0.017, 0.829, 0.907)
+
+# Compute the logarithm of `x`, return suitably lagged and iterated differences, 
+# compute the exponential function and round the result
+round(exp(diff(log(x))), 1)
+
+# Compute the same computation as above but with pipe in operator
+
+x %>% log() %>%
+    diff() %>%
+    exp() %>%
+    round(1)
+
+```
+
+In short, here are four reasons why you should be using pipes in R:
+
+1. You'll structure the sequence of your data operations from left to right, as apposed to from inside and out;
+
+2. You'll avoid nested function calls;
+
+3. You'll minimize the need for local variables and function definitions;
+
+4. You'll make it easy to add steps anywhere in the sequence of operations.
+
+## dplyr package
+ 
+By far my most used package in R is `dplyr`. See documentation [here](https://www.rdocumentation.org/packages/dplyr/versions/0.7.8) 
+
+dplyr is part of the tidyverse collection of R packages for data science. At it's core, there are 5 functions which I use (typically chained with the pipe in operator `%>%`) for every single analysis:
+
+`mutate()` adds new variables that are functions of existing variables
+`select()` picks variables based on their names.
+`filter()` picks cases based on their values.
+`summarise()` reduces multiple values down to a single summary.
+`arrange()` changes the ordering of the rows.
+`group_by` allows for group operations in the “split-apply-combine” concept
+
+I'll demonstrate below using strictly dplyr functions with the datasets `PlantGrowth` which are the results of an experiment on Plant Growth with 3 conditions and `mtcars` which are fuel consumption and 10 aspects of automobile design and performance for 32 automobiles.
+
+```{r echo=TRUE}
+library(dplyr)
+
+summary(PlantGrowth)
+
+# calculate the average weight of the plants by condition
+
+PlantGrowth %>%
+  group_by(group) %>%
+  summarise(mean_growth = mean(weight))
+
+# create a new column of weight from lbs to kg (1 lb = 0.453kg)
+# filter 6 cylinder cars only
+# isolate model name, mpg, and wt in kg
+# arange the data from lightest to heaviest
+
+head(mtcars)
+
+mtcars %>%
+  mutate(wt_kg = (wt*1000)*0.453) %>%
+  filter(cyl == 6) %>%
+  select(mpg, wt_kg) %>%
+  arrange(wt_kg)
+
+```
+
+As you can see, with only a few lines of code, we can chain various cleaning commands together and produce a desirable output. I highly recommend the dplyr package for all data cleaning purposes. Here's a very nice [cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) that you should bookmark.
+
+## tidy data
+
+I believe most of the time spent doing data analysis is actually spent doing data cleaning. While data cleaning is typically the first step, it typically must be repeated many times over the course of analysis as new problems come to light or new data is collected. To this end, tidying data is a way to structure datasets to facilitate analysis.
+
+A dataset is a collection of values, usually either numbers (if quantitative) or strings (if qualitative). Values are organized in two ways. Every value belongs to a variable and an observation. A variable contains all values that measure the same underlying attribute (like height, temperature, duration) across units. An observation contains all values measured on the same unit (like a person, or a day, or a race) across attributes.
+
+Tidy data is a standard way of mapping the meaning of a dataset to its structure. A dataset is messy or tidy depending on how rows, columns and tables are matched up with observations, variables and types. In tidy data:
+
+1. Every column is a variable.
+
+2. Every row is an observation.
+
+3. Every cell is a single value.
+
+While these are the main principles behind tidy data, there's a lot of nuances and hundreds of data sets that break these rules. Practice is the best lesson here and you'll find that once you have assembled a tidy data set, it will make conducting statistical analysis and visualizations 100% easier. I'll provide two examples of non-tidy data followed by a tidy data set.
+
+```{r echo=TRUE}
+# FIRST EXAMPLE
+
+head(relig_income)
+
+# notice the column names, let's fix that
+
+relig_income %>% 
+  pivot_longer(-religion, names_to = "income", values_to = "frequency")
+
+```
+
+This dataset has three variables: `religion`, `income` and `frequency`. To tidy it, we needed to pivot the non-variable columns into a two-column key-value pair. This action is often described as making a wide dataset longer.
+
+When pivoting variables, we needed to provide the name of the new key-value columns to create. After defining the columns to pivot (every column except for `religion`), you will need the name of the key column, which is the name of the variable defined by the values of the column headings. In this case, it’s `income`. The second argument is the name of the value column, `frequency`.
+
+```{r echo=TRUE}
+# SECOND EXAMPLE
+
+head(billboard)
+```
+
+The above dataset records the date a song first entered the billboard top 100. It has variables for `artist`, `track`, `date.entered`, `rank` and `week`. The rank in each week after it enters the top 100 is recorded in 75 columns, `wk1` to `wk75`. This form of storage is not tidy, but it is useful for data entry. It reduces duplication since otherwise each song in each week would need its own row, and song metadata like title and artist would need to be repeated.
+
+
+```{r recho=TRUE}
+billboard %>% 
+  pivot_longer(
+    wk1:wk76, 
+    names_to = "week", 
+    values_to = "rank", 
+    values_drop_na = TRUE
+  ) %>%
+  mutate(week = as.integer(gsub("wk", "", week)),
+         date = as.Date(as.Date(date.entered) + 7 * (week - 1)),
+         date.entered = NULL)
+```
+
+To tidy this dataset, we first used `pivot_longer()` to make the dataset longer. We transform the columns from `wk1` to `wk76`, making a new column for their names: `week`, and a new value for their values: `rank`. Next, we use `values_drop_na = TRUE` to drop any missing values from the rank column. In this data, missing values represent weeks that the song wasn’t in the charts, so it can be safely dropped.
+
+In this case it’s also nice to do a little cleaning, converting the week variable to a number, and figuring out the date corresponding to each week on the charts.
+
+These are a couple examples of how to tidy data, but having worked with hundreds of datasets from different sources, there will always be unique challenges that require creative thinking and patience. 

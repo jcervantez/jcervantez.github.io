@@ -1,9 +1,10 @@
 ---
 title: "Jose Cervantez"
 author: "Frida Gomam"
+output: html_document
 date: 2020-12-01T21:13:14-05:00
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
 ---
 
-My name's Jose Cervantez and I am a current Pre-Doctoral Resarch Fellow at the UCLA Anderson SChool of Management.
+My name's Jose Cervantez and I am a current Pre-Doctoral Resarch Fellow at the UCLA Anderson School of Management.

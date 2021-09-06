@@ -11,6 +11,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
 }
+.badCode {
+background-color: red;
+}
 
 h1,
 h2,
@@ -28,9 +31,10 @@ a {
 code {
   background-color: rgb(27,43,52);
   color: #F0F0F0; 
-  background: #600;
+  background: rgb(27,43,52);
   font-family: Chunkfive, sans;
   --heading-1: 30px/32px Helvetica, sans-serif;
+  
 }
 
 img {

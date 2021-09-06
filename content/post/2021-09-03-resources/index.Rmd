@@ -14,7 +14,12 @@ The pipe operator, written as `%>%` takes the output of one function and passes 
 
 For a mathematical analogy, `f(x)` can be rewritten as `x %>% f`
 
-```{r echo=TRUE}
+<style>
+div.blue pre { background-color:lightblue; }
+div.blue pre.r { background-color:blue; }
+</style>
+
+```{r class.source="badCode", results="asis", echo=TRUE}
 ## compute the logarithm of `x`
 
 x <- 1
@@ -27,6 +32,8 @@ x %>% log()
 
 
 ```
+
+</div>
 
 Why is this useful though? R is a functional language, which means that your code often contains a lot of parenthesis, `(` and `)`. When you have complex code, this often will mean that you will have to nest those parentheses together. This makes your R code hard to read and understand.
 

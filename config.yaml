@@ -16,14 +16,19 @@ menu:
   main:
     - name: Academic Interests
       url: /about/
+      weight: 1
     - name: Resources
       url: /Resources/
+      identifier: Resources
+      weight: 1
     - name: CV
       url: /CV/
+      weight: 1
     - name: R Programming
       url: /Resources/
       weight: 2
-      parent = "Resources"
+      parent: Resources
+      identifier: Resources2
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5

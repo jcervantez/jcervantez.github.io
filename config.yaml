@@ -26,7 +26,7 @@ params:
   description: A website built through Hugo and blogdown.
   favicon: favicon.ico
   highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
-  highlightjsLang:
+  highlightjsLang: ["r", "yaml"]
     - r
     - yaml
   highlightjsTheme: github

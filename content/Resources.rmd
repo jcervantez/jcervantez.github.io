@@ -1,5 +1,6 @@
 ---
 title: R Programming
+toc: yes
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, fig.width = 6, fig.height = 6)
@@ -16,8 +17,6 @@ Over the past couple of years, I've had the privilege to advance my R skills, as
 The pipe operator, written as `%>%` takes the output of one function and passes it into another function as an argument. This allows us to link a sequence of analysis steps. 
 
 For a mathematical analogy, `f(x)` can be rewritten as `x %>% f`
-
-
 
 
 ```{r}
@@ -40,7 +39,8 @@ Why is this useful though? R is a functional language, which means that your cod
 # Initialize `x`
 x <- c(0.109, 0.359, 0.63, 0.996, 0.515, 0.142, 0.017, 0.829, 0.907)
 
-# Compute the logarithm of `x`, return suitably lagged and iterated differences, 
+# Compute the logarithm of `x`, return suitably lagged and 
+# iterated differences, 
 # compute the exponential function and round the result
 round(exp(diff(log(x))), 1)
 

@@ -11,9 +11,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
 }
-.badCode {
-background-color: red;
-}
 
 h1, 
 h2,
@@ -32,13 +29,18 @@ code {
   color: rgb(27,43,52); 
   background: #daeaf2;
   font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  word-wrap: break-word;
   
 }
 pre.r { 
     border-style: solid; 
     border-width: 2px; 
+    box-sizing: inline-block;
     background-color: #daeaf2;
+    font-size: 12px;
+    word-wrap: break-word;
   }
+}
 img {
   max-width: 100%;
 }

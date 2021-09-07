@@ -41,3 +41,6 @@ markup:
   goldmark:
     renderer:
       unsafe: yes
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3

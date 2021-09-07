@@ -16,7 +16,7 @@ menu:
   main:
     - name: Academic Interests
       url: /about/
-    - name: Programming Tips
+    - name: Resources
       url: /Resources/
     - name: CV
       url: /CV/

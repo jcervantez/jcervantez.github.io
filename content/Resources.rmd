@@ -1,6 +1,8 @@
 ---
 title: R Programming
-toc: yes
+output:
+  blogdown::html_page:
+    toc: true
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, fig.width = 6, fig.height = 6)

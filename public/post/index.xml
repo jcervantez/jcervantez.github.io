@@ -1,20 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Jose Cervantez</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on Jose Cervantez</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>R Programming Tips</title>
-      <link>/1/01/01/r-programming-tips/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/r-programming-tips/</guid>
-      <description>PreambleOver the past couple of years, I’ve had the privilege to advance my R skills, as well as acquire useful functions that should aid anyone using R for behavioral science. This list is not exhaustive, but a list of my most used functions, packages, and useful tips!
-Pipe %&amp;gt;% OperatorThe pipe operator, written as %&amp;gt;% takes the output of one function and passes it into another function as an argument.</description>
-    </item>
-    
-  </channel>
-</rss>

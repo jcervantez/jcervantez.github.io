@@ -18,11 +18,6 @@ The pipe operator, written as `%>%` takes the output of one function and passes 
 For a mathematical analogy, `f(x)` can be rewritten as `x %>% f`
 
 
-<style>
-div.blue pre { background-color:lightblue; }
-div.blue pre.r { background-color:blue; }
-
-</style>
 
 
 ```{r}

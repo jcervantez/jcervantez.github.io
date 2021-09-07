@@ -25,7 +25,7 @@ div.blue pre.r { background-color:blue; }
 </style>
 
 
-```{r echo=TRUE}
+```{r}
 ## compute the logarithm of `x`
 
 x <- 1

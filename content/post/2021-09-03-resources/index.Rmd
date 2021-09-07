@@ -1,5 +1,5 @@
 ---
-title: "Jose Cervantez"
+title: "R Programming Tips"
 output: html_document
 ---
 
@@ -19,12 +19,15 @@ The pipe operator, written as `%>%` takes the output of one function and passes 
 
 For a mathematical analogy, `f(x)` can be rewritten as `x %>% f`
 
+
 <style>
 div.blue pre { background-color:lightblue; }
 div.blue pre.r { background-color:blue; }
+
 </style>
 
-```{r class.source="badCode", results="asis", echo=TRUE}
+
+```{r echo=TRUE}
 ## compute the logarithm of `x`
 
 x <- 1

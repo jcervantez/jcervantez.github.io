@@ -17,17 +17,18 @@ output: html_document
 <style>
 div.blue pre { background-color:lightblue; }
 div.blue pre.r { background-color:blue; }
+
 </style>
-<pre class="r badCode"><code>## compute the logarithm of `x`
+<pre class="r"><code>## compute the logarithm of `x`
 
 x &lt;- 1
 
 log(x)</code></pre>
-<p>[1] 0</p>
-<pre class="r badCode"><code>## compute the logaritm of `x`
+<pre><code>## [1] 0</code></pre>
+<pre class="r"><code>## compute the logaritm of `x`
 
 x %&gt;% log()</code></pre>
-<p>[1] 0</p>
+<pre><code>## [1] 0</code></pre>
 </div>
 <p>Why is this useful though? R is a functional language, which means that your code often contains a lot of parenthesis, <code>(</code> and <code>)</code>. When you have complex code, this often will mean that you will have to nest those parentheses together. This makes your R code hard to read and understand.</p>
 <pre class="r"><code># Initialize `x`

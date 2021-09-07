@@ -30,6 +30,7 @@ code {
   background: #daeaf2;
   font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
   word-wrap: break-word;
+  font-size: 14px;
   
 }
 pre.r { 
@@ -37,7 +38,6 @@ pre.r {
     border-width: 2px; 
     box-sizing: inline-block;
     background-color: #daeaf2;
-    font-size: 12px;
     word-wrap: break-word;
   }
 }

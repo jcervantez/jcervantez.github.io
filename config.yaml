@@ -26,7 +26,7 @@ menu:
     - name: R Programming
       url: /Resources/
       parent: Resources
-      weight: 2
+      weight: 3
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5

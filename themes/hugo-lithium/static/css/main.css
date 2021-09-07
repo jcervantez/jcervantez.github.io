@@ -170,7 +170,10 @@ img {
 .highlight pre {
   padding: 10px;
 }
-
+pre.r { 
+    border-style: solid; 
+    border-width: 2px; 
+  }
 .archive {
   margin: 0;
   padding: 0;

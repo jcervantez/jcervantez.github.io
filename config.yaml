@@ -18,7 +18,7 @@ menu:
       url: /about/
       weight: 1
     - name: Resources
-      url: /
+      url: #
       identifier: Resources
       weight: 1
     - name: CV
@@ -29,9 +29,10 @@ menu:
       weight: 2
       parent: Resources
       identifier: Resources2
-      sub:
-        name: R Programming
+      main.sub:
+        - name: R Programming
         url: /Resources/
+        parent: Resources2
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5

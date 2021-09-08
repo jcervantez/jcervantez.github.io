@@ -24,7 +24,7 @@ menu:
     - name: CV   
       url: /CV/
       weight: 1
-      # identifier: cv
+      identifier: cv
     - name: R Programming
       url: /Resources/
       parent: Resources

@@ -296,10 +296,10 @@ img {
 /* Links inside the dropdown */
 .dropdown-content li {
   font-size: 12px;
-  margin-left: 0;
   float: none;
   text-align: right;
   color: black;
+  padding: 10px 10px;
   text-decoration: none;
   display: inline-block;
   margin: 0 0 0 15px;

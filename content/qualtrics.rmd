@@ -22,7 +22,7 @@ I personally like to work within the survey flow for the majority of my conditio
 
 
 
-![Condition assignment via survey flow](/qualtrics_files/condition-assignment.png)
+![Condition assignment via survey flow](/qualtrics_files/condition-assignment.png){width=80%}
 
 
 ![Condition assignment within the variable](/qualtrics_files/condition assignment within the variable.png)

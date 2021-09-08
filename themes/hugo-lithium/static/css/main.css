@@ -271,7 +271,7 @@ img {
 /* Dropdown button */
 .dropdown .dropbtn {
   display: inline-block;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 0px;
   border: none;
   outline: none;
   font-size: 14px;

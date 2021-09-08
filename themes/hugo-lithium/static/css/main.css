@@ -302,7 +302,8 @@ img {
   color: black;
   padding: 10px 10px;
   text-decoration: none;
-  display: block;
+  display: inline-block;
+  margin: 0 0 0 15px;
 }
 
 
@@ -313,7 +314,7 @@ img {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: inline-block;
 }
 
 

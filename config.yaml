@@ -21,7 +21,7 @@ menu:
     - name: Resources
       identifier: Resources
       weight: 1
-    - name: CV   
+    - name: CV
       url: /CV/
       weight: 1
       identifier: cv

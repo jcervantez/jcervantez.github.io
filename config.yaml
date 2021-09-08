@@ -29,6 +29,10 @@ menu:
       url: /Resources/
       parent: Resources
       weight: 2
+    - name: Qualtrics
+      url: /Qualtrics/
+      parent: Resources
+      weight: 2
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5

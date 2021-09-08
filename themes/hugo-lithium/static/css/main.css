@@ -265,6 +265,7 @@ img {
 .dropdown {
   float: right;
   overflow: hidden;
+  padding: 0;
 }
 
 /* Dropdown button */

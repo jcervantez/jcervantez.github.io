@@ -7,14 +7,14 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-My name is Jose Cervantez and I am a current Pre-Doctoral Research Fellow at the UCLA Anderson School of Management. I will be applying to Organizational Behavior, Management and Social Psychology PhD programs in Fall 2021, with an anticipated start date of Fall 2022. My research is broadly focused on social equity and mobility issues. I am interested in how the individual traverses both occupational and social spaces while facing the threats of stereotype, discrimination, and prejudice.  
+My name is Jose Cervantez and I am a current Pre-Doctoral Research Fellow at the UCLA Anderson School of Management. I will be applying to Organizational Behavior, Management and Social Psychology PhD programs in Fall 2021, with an anticipated start date of Fall 2022. My research is broadly focused on social equity and mobility. I am interested in how the individual traverses both occupational and social spaces while facing stereotype, discrimination, and prejudice.  
 
-My website is built around two premises: 
+My website has two primary purposes: 
 
-1. Landing page for my research.
+1. To be a landing page for my research
 
-2. Learning space for statistics, programming, and technical skills. 
+2. To be space for others to learn foundational skills around statistics and programming
 
-Since my research is built around mobility and equity, I am a large advocate for sharing knowledge and building others up. Feel free to look at my Resources tab for more information.
+I am a large advocate for sharing knowledge and building capacity in others. Feel free to look at my Resources tab for more information.
 
 I'm always looking for collaborators, research discussions, and differences in opinion!

@@ -7,4 +7,4 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-My name is Jose Cervantez and I am current Pre-Doctoral Research Fellow at UCLA Anderson School of Management.
+My name is Jose Cervantez and I am current Pre-Doctoral Research Fellow at UCLA Anderson School of Management. I will be planning to apply to Organizational Behavior, Management and Social Psychology PhD programs in Fall 2021, with an anticipated start date of Fall 2022. 

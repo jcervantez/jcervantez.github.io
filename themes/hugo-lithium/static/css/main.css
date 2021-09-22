@@ -59,8 +59,8 @@ img {
 
 .nav {
   max-width: 800px;
-  margin: 0;
-  padding: 0;
+  margin: 40px auto 10px;
+  padding: 0 15px;
   text-align: right;
 }
 
@@ -82,8 +82,8 @@ img {
 }
 
 .nav-links {
-  margin: 0;
-  padding: 0;
+  margin: 40px auto 10px;
+  padding: 0 15px;
   font-size: 14px;
   list-style: none;
 }

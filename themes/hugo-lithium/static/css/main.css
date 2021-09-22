@@ -83,7 +83,7 @@ img {
 
 .nav-links {
   margin: 0 30px;
-  padding: 0;
+  padding: 0 30px;
   font-size: 14px;
   list-style: none;
 }

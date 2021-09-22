@@ -17,3 +17,15 @@ My program of research seeks to provide evidence of this imbalance through the u
 
 3. How meritocracy creates a scapegoat for reconciliation.
 
+
+
+
+<sup>
+References
+
+1. Hatfield, E., Rapson, R. L., & Aumer-Ryan, K. (2008). Social justice in love relationships: Recent developments. Social Justice Research, 21(4), 413-431.
+
+
+
+
+</sup>

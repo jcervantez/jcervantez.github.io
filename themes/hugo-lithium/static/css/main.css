@@ -59,8 +59,8 @@ img {
 
 .nav {
   max-width: 800px;
-  margin: 30px;
-  padding: 0 auto;
+  margin: 0 30px;
+  padding: 0 15px;
   text-align: right;
 }
 

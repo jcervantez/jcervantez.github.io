@@ -13,7 +13,7 @@ My program of research seeks to provide evidence of this imbalance through the u
 
 1. Why are there such divergent views of progress between racial groups?
 
-2. Why diversity messaging from organizations can cause tensions for the marginalized groups being promoted and can led to further inequitable outcomes.
+2. Why diversity messaging from organizations can cause tensions for the marginalized groups being promoted, and can led to further inequitable outcomes.
 
 3. How meritocracy creates a scapegoat for reconciliation.
 

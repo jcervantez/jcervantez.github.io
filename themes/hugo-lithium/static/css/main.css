@@ -334,7 +334,10 @@ img {
   .header {
     padding: 25px 0;
   }
-  
+  a {
+  outline: none;
+  margin: 0 0 0 15px;
+}
 
   .nav-logo {
     margin-top: -13px;

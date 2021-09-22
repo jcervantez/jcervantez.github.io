@@ -1,5 +1,19 @@
 ---
 title: Research Interests
+toc: yes
 ---
 
-Jose Cervantez Research Interests
+## Justice and Equity
+
+In the 11th century, St. Anselm of Canterbury argued that the will possesses two competing affinities: an affection for what is to a person’s own selfish advantage and an affection for justice<sup>[1]</sup>. While the first inclination may be stronger, the second one is not far behind.
+
+We see these two competing affinities play out in modern society through the imbalances of power and the establishment of group-based hierarchies reinforced by race, gender, and social class. I posit, that at the root of all injustice is a fundamental yearning to fulfill our own selfish inclinations. 
+
+My program of research seeks to provide evidence of this imbalance through the use of empirical field studies. Some example research questions include:
+
+1. Why are there such divergent views of progress between racial groups?
+
+2. Why diversity messaging from organizations can cause tensions for the marginalized groups being promoted and can led to further inequitable outcomes.
+
+3. How meritocracy creates a scapegoat for reconciliation.
+

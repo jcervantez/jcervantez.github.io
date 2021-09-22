@@ -331,10 +331,6 @@ img {
 }
 
 @media (min-width: 600px) {
-  a {
-  outline: none;
-  margin: 0 0 0 0px;
-}
   .header {
     padding: 25px 0;
   }

@@ -60,13 +60,13 @@ img {
 .nav {
   max-width: 800px;
   margin: 0;
-  padding: 0;
+  padding: 30px;
   text-align: right;
 }
 
 .nav-logo {
   float: left;
-  margin-top: -30px;
+  margin-top: -11px;
   transition: transform 150ms ease-out;
 }
 

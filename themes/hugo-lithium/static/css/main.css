@@ -334,11 +334,6 @@ img {
   .header {
     padding: 25px 0;
   }
-  a {
-  outline: none;
-  margin: 0 0 0 0px;
-}
-
   .nav-logo {
     margin-top: -13px;
   }
@@ -349,13 +344,13 @@ img {
 
   .nav-links {
     font-size: 18px;
-    margin: 0 0 0 0px;
+    margin: 0px;
   }
 
   .nav-links li {
-    margin: 0 0 0 0px;
+    display: inline-block;
+    margin: 0px;
   }
-  
   .content {
     font-size: 19px;
     line-height: 1.8;

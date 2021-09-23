@@ -322,7 +322,7 @@ img {
 
 @media (min-width: 600px) {
     .dropdown .dropbtn {
-          font-size: 18px;
+        font-size: 18px;
     }
     .dropdown-content li {
         font-size: 18px;

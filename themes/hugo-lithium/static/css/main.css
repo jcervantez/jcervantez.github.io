@@ -24,7 +24,6 @@ h6 {
 a {
   font-size: 18px;
   outline: none;
-  margin: 0 0 0 15px;
 }
 
 code {
@@ -92,7 +91,7 @@ img {
 
 .nav-links li {
   display: inline-block;
-  margin: 0 0 0 45px;
+  margin: 0 0 0 15px;
 }
 
 .nav-links li:first-child {
@@ -335,6 +334,7 @@ img {
   .header {
     padding: 25px 0;
   }
+  
   .nav-logo {
     margin-top: -13px;
   }

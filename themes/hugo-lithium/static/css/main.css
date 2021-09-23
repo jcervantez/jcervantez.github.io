@@ -336,7 +336,7 @@ img {
   }
   a {
   outline: none;
-  margin: 0 0 0 5px;
+  margin: 0 0 0 0px;
 }
 
   .nav-logo {
@@ -349,12 +349,13 @@ img {
 
   .nav-links {
     font-size: 18px;
+    margin: 0 0 0 0px;
   }
 
   .nav-links li {
     margin: 0 0 0 0px;
   }
-
+  
   .content {
     font-size: 19px;
     line-height: 1.8;

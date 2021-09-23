@@ -342,15 +342,6 @@ img {
     max-height: 50px;
   }
 
-  .nav-links {
-    font-size: 18px;
-    margin: 0px;
-  }
-
-  .nav-links li {
-    display: inline-block;
-    margin: 0px;
-  }
   .content {
     font-size: 19px;
     line-height: 1.8;

@@ -6,7 +6,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-![](josepic.png){width=100%}
+![](/_index_files/josepic.png){width=100%}
 
 My name is Jose Cervantez and I am a current Pre-Doctoral Research Fellow at the UCLA Anderson School of Management. I will be applying to Organizational Behavior, Management and Social Psychology PhD programs in Fall 2021, with an anticipated start date of Fall 2022. My research is broadly focused on social equity and mobility. I am interested in how the individual traverses both occupational and social spaces while facing stereotype, discrimination, and prejudice.  
 

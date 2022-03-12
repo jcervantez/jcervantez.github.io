@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/qualtrics/</loc>
+  </url><url>
+    <loc>/resources/</loc>
+  </url><url>
     <loc>/categories/</loc>
   </url><url>
     <loc>/cv/</loc>
   </url><url>
-    <loc>/</loc>
-  </url><url>
-    <loc>/post/</loc>
-  </url><url>
-    <loc>/1/01/01/r-programming-tips/</loc>
-  </url><url>
     <loc>/about/</loc>
+  </url><url>
+    <loc>/</loc>
   </url><url>
     <loc>/tags/</loc>
   </url>

@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.88.0" />
 
 
-<title>Resources - Jose Cervantez</title>
-<meta property="og:title" content="Resources - Jose Cervantez">
+<title>R Programming - Jose Cervantez</title>
+<meta property="og:title" content="R Programming - Jose Cervantez">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -31,7 +31,6 @@
 <link rel="stylesheet" href="/css/main.css" media="all">
 
 
-
   </head>
   <body>
     <div class="wrapper">
@@ -43,15 +42,32 @@
          height="50"
          alt="Logo">
   </a>
-
   <ul class="nav-links">
     
-    <li><a href="/about/">Academic Interests</a></li>
+
+        <li><a href="/cv/"><i class="" aria-hidden="true"></i>&nbsp; CV</a></li>
     
-    <li><a href="/cv/">CV</a></li>
     
-    <li><a href="/resources/">Programming Tips</a></li>
+
+        <li><a href="/about/"><i class="" aria-hidden="true"></i>&nbsp; Interests</a></li>
     
+    
+
+        <div class="dropdown">
+            <button class="dropbtn"><i class="" aria-hidden="true"></i>&nbsp; Resources
+              <i class="fas fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                
+                    <li><a href="/qualtrics/"><i class="" aria-hidden="true"></i>&nbsp; Qualtrics</a></li>
+                
+                    <li><a href="/resources/"><i class="" aria-hidden="true"></i>&nbsp; R Programming</a></li>
+                
+            </div>
+        </div>
+
+    
+
   </ul>
 </nav>
       </header>
@@ -61,13 +77,21 @@
 
   <article class="article">
 
-    <h1 class="article-title">Resources</h1>
+    <h1 class="article-title">R Programming</h1>
 
 
     <div class="article-content">
       
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
+<div id="TOC">
+<ul>
+<li><a href="#preamble">Preamble</a></li>
+<li><a href="#pipe-operator">Pipe <code>%&gt;%</code> Operator</a></li>
+<li><a href="#dplyr-package">dplyr package</a></li>
+<li><a href="#tidy-data">tidy data</a></li>
+</ul>
+</div>
 
 <div id="preamble" class="section level2">
 <h2>Preamble</h2>
@@ -77,21 +101,22 @@
 <h2>Pipe <code>%&gt;%</code> Operator</h2>
 <p>The pipe operator, written as <code>%&gt;%</code> takes the output of one function and passes it into another function as an argument. This allows us to link a sequence of analysis steps.</p>
 <p>For a mathematical analogy, <code>f(x)</code> can be rewritten as <code>x %&gt;% f</code></p>
-<pre class="r bg-danger"><code>## compute the logarithm of `x`
+<pre class="r"><code>## compute the logarithm of `x`
 
 x &lt;- 1
 
 log(x)</code></pre>
-<pre class="bg-warning"><code>## [1] 0</code></pre>
-<pre class="r bg-danger"><code>## compute the logaritm of `x`
+<pre><code>## [1] 0</code></pre>
+<pre class="r"><code>## compute the logaritm of `x`
 
 x %&gt;% log()</code></pre>
-<pre class="bg-warning"><code>## [1] 0</code></pre>
+<pre><code>## [1] 0</code></pre>
 <p>Why is this useful though? R is a functional language, which means that your code often contains a lot of parenthesis, <code>(</code> and <code>)</code>. When you have complex code, this often will mean that you will have to nest those parentheses together. This makes your R code hard to read and understand.</p>
 <pre class="r"><code># Initialize `x`
 x &lt;- c(0.109, 0.359, 0.63, 0.996, 0.515, 0.142, 0.017, 0.829, 0.907)
 
-# Compute the logarithm of `x`, return suitably lagged and iterated differences, 
+# Compute the logarithm of `x`, return suitably lagged and 
+# iterated differences, 
 # compute the exponential function and round the result
 round(exp(diff(log(x))), 1)</code></pre>
 <pre><code>## [1]  3.3  1.8  1.6  0.5  0.3  0.1 48.8  1.1</code></pre>
@@ -271,5 +296,4 @@ head(billboard)</code></pre>
 
 
 </main>
-
 

@@ -1,5 +1,5 @@
 ---
-title: "Social Equity Researcher"
+title: "Jose Cervantez"
 output:
   blogdown::html_page:
       toc: true

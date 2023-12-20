@@ -13,14 +13,5 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ![](/qualtrics_files/jose.jpg){width=40%}
 
-My name is Jose Cervantez and I am 1st year PhD student at The Wharton School of The University of Pennsylvania. I am a part of the Decision Processes group within the Operations, Information and Decisions Department. I am currently working with Katy Milkman. My research interests revolve around diversity, equity and inclusion, specifically in creating pathways for underrepresented minorities in both business and education. I have a strong preference for quantitative methods, primarily employing large scale field experiments. 
+My name is Jose Cervantez and I am 2nd year PhD student at The Wharton School of The University of Pennsylvania. I am a part of the Decision Processes group within the Operations, Information and Decisions Department. I am currently working with Katy Milkman. My research interests revolve around diversity, equity and inclusion, and how interventions can help facilitate greater access across race and gender lines. My research is anchored within judgement and decision-making where human reliance on simple heuristics can lead us to make substantial biases, especially when it comes to reinforcing race and gender bias.
 
-My website has two primary purposes: 
-
-1. To be a landing page for my research
-
-2. To be space for others to learn fundamental skills around statistics and programming
-
-I am a large advocate for sharing knowledge and building capacity in others. Feel free to look at my Resources tab for more information.
-
-I'm always looking for collaborators, research discussions, and differences in opinion!
